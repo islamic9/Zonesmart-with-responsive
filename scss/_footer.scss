@@ -1,0 +1,85 @@
+
+
+.background-footer{
+  background: linear-gradient(180deg, #F7F8FA 0%, #EDF1F5 100%);
+}
+
+.footer__top-info{
+  padding: 48px 0 32px 0;
+  @include center-elements (flex, center, space-between, 0);
+}
+
+.footer__title{
+  @include fonts ('Roboto-500', normal, 500, 36px, 44px, -1px, #152739);
+}
+
+.footer__title-span{
+  @include fonts ('Roboto-500', normal, 500, 36px, 44px, -1px, #152739);
+  display: block;
+}
+
+.footer__span{
+  @include fonts ('Roboto-500', normal, 500, 18px, 21px, -0.2px, rgb(60, 200, 174, 0.9));
+}
+
+.footer__img-info{
+  @include center-elements (flex, center, space-between, 0);
+  padding-bottom: 77px;
+}
+
+.footer__box-span{
+  display: block;
+  padding-top: 19px;
+  @include fonts ('Roboto-500', normal, 500, 18px, 15px, -0.2px, rgb(21, 39, 57, 0.4));
+}
+
+.footer__box-text{
+  padding-top: 10px;
+  @include fonts ('Roboto-500', normal, 500, 20px, 25px, -0.403846px, rgba(0, 0, 0));
+}
+
+.footer__strong{
+  @include fonts ('Roboto-500', normal, 500, 18px, 21px, -0.2px, rgb(60, 200, 174, 0.9));
+  padding-top: 14px;
+  display: block;
+}
+
+
+
+
+@media only screen and(max-width:375px){
+
+
+  .background-footer{
+    background: #fff
+  }
+
+  .footer__title{
+    @include fonts ('Roboto-500', normal, 500, 23px, 32px, -0.638889px, #152739);
+  }
+  
+  .footer__title-span{
+    display: none;
+  }
+
+  .footer__span{
+    @include fonts ('Roboto-500', normal, 500, 15px, 21px, -0.2px, rgb(60, 200, 174, 0.9));
+  }
+
+  .footer__img-info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__box img{
+    width: 333px;
+    height: 188px;
+  }
+
+  .footer__strong{
+    @include fonts ('Roboto-500', normal, 500, 15px, 18px, -0.166667px, rgb(60, 200, 174, 0.9));
+    padding: 14px 0 29px 0;
+    display: block;
+  }
+
+}
